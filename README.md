@@ -216,29 +216,4 @@ Additionally:
 - This helps you immediately find the problematic part  
 - Simply fix the issue and press **Run** again
 
----
-
-# 🎯 Summary of the Workflow
-
-1. Press **Run**  
-2. The system performs loading + similarity check  
-3. After success → page automatically scrolls down  
-4. Check the **Widget Test Result**  
-5. If green → your answer is correct  
-6. If there are errors → read “Expected vs Actual”  
-7. Fix the highlighted lines in the editor  
-8. Press **Run** again until all tests pass  
-
----
-
-# 💡 Useful Tips
-
-- The main focus is **not** the similarity popup, but the **Widget Test Result**  
-- Red highlights in the editor show exactly what needs fixing  
-- Read “Expected vs Actual” carefully  
-- Some errors might be small (wrong color, wrong text style), so check details  
-- Even if the output visually looks correct, a widget test may still fail if any property is incorrect  
-
----
-
 <a href="#flutter-programmaing-assistant-system-with-docker" style="font-size: 0.1px; color: #FF0000;">back to top ↑</a>
