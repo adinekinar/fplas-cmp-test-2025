@@ -144,21 +144,117 @@ Flutter Programming Learning Assistant System includes frontend, backend and web
 
 ## 5. Flutter Widget Testing (New Feature)
 
-The latest version of this system integrates **Flutter widget tests** for each exercise to check:
+In the latest version of the system, **Flutter Widget Testing** has been added.  
+This feature checks whether the code you wrote is **correct and matches** the expected result.
 
-- Text content and style  
-- Layout and widget structure  
-- Colors, sizes, and other visual properties  
+Widget testing provides more detailed feedback, such as:
+- differences in your code,
+- incorrect scroll direction,
+- incorrect widget sizes,
+- mismatched text styles,
+- and widget structure issues.
 
-### 📁 Test file structure
+This feature runs automatically when you press the **Run** button.
 
-All tests are stored under:
+---
 
-```bash
-test/Flutter_CMP_Basic/
- ├── p1/
- │    └── widget_test.dart
- ├── p2/
- ├── p3/
- ├── p4/
- └── p5/
+# 📌 How the Widget Testing Works (User Guide)
+
+Below is the full process that happens when you press **Run** on any exercise:
+
+---
+
+## 🔹 **Step 1 — Loading + Similarity Check (Initial Popup)**
+
+After pressing **Run**, the system will:
+
+1. Build your Flutter code  
+2. Run your application  
+3. Capture a screenshot of your output  
+4. Perform a **screen similarity check**
+
+Once this process finishes, you will see a **similarity popup**.
+
+> **Important Note:**  
+> This similarity popup is **not the main evaluation**.  
+> It only gives a general idea of whether your visual output looks similar or different from the expected result.
+
+The page does **not** scroll after closing the popup.  
+Instead, **once the loading process finishes and the similarity check succeeds**, the page will automatically scroll down.
+
+---
+
+## 🔹 **Step 2 — Widget Test Result (Main Evaluation Section)**
+
+After the similarity check is finished, the page automatically scrolls to 'Widget Test Result'
+
+This is the **final and most important evaluation**, determining whether your code is correct.
+
+The widget testing checks:
+
+- Scroll direction (`Axis.horizontal` vs `Axis.vertical`)
+- Container size and layout
+- Widget colors
+- Text style (font size, weight, color)
+- Text content
+- Widget structure & order of children
+- Other properties required for the exercise
+
+---
+
+# 🟢 **1. If Everything Is Correct → “All tests passed!” (green message)**
+
+If all checks pass, you will see:
+
+gambar
+
+This means:
+- Your code is fully correct  
+- It matches the expected result  
+- You may proceed to the next exercise  
+
+No further corrections are needed.
+
+---
+
+# 🔴 **2. If There Are Mistakes → Expected vs Actual Errors**
+
+If something is incorrect, the system will show a list of differences, such as:
+
+gambar
+
+Or another example:
+
+gambar
+
+Additionally:
+- The system will **highlight the incorrect lines in red** inside the code editor  
+- This helps you immediately find the problematic part  
+- Simply fix the issue and press **Run** again
+
+---
+
+# 🎯 Summary of the Workflow
+
+1. Press **Run**  
+2. The system performs loading + similarity check  
+3. After success → page automatically scrolls down  
+4. Check the **Widget Test Result**  
+5. If green → your answer is correct  
+6. If there are errors → read “Expected vs Actual”  
+7. Fix the highlighted lines in the editor  
+8. Press **Run** again until all tests pass  
+
+---
+
+# 💡 Useful Tips
+
+- The main focus is **not** the similarity popup, but the **Widget Test Result**  
+- Red highlights in the editor show exactly what needs fixing  
+- Read “Expected vs Actual” carefully  
+- Some errors might be small (wrong color, wrong text style), so check details  
+- Even if the output visually looks correct, a widget test may still fail if any property is incorrect  
+
+---
+
+<a href="#flutter-programmaing-assistant-system-with-docker" style="font-size: 0.1px; color: #FF0000;">back to top ↑</a>
