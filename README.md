@@ -162,8 +162,6 @@ This feature runs automatically when you press the **Run** button.
 
 Below is the full process that happens when you press **Run** on any exercise:
 
----
-
 ## 🔹 **Step 1 — Loading + Similarity Check (Initial Popup)**
 
 After pressing **Run**, the system will:
@@ -175,10 +173,6 @@ After pressing **Run**, the system will:
 
 Once this process finishes, you will see a **similarity popup**.
 
-> **Important Note:**  
-> This similarity popup is **not the main evaluation**.  
-> It only gives a general idea of whether your visual output looks similar or different from the expected result.
-
 The page does **not** scroll after closing the popup.  
 Instead, **once the loading process finishes and the similarity check succeeds**, the page will automatically scroll down.
 
@@ -189,16 +183,6 @@ Instead, **once the loading process finishes and the similarity check succeeds**
 After the similarity check is finished, the page automatically scrolls to 'Widget Test Result'
 
 This is the **final and most important evaluation**, determining whether your code is correct.
-
-The widget testing checks:
-
-- Scroll direction (`Axis.horizontal` vs `Axis.vertical`)
-- Container size and layout
-- Widget colors
-- Text style (font size, weight, color)
-- Text content
-- Widget structure & order of children
-- Other properties required for the exercise
 
 ---
 
