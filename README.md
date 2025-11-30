@@ -12,7 +12,7 @@
  	- [Exercise-4](#exercise-4)  
   	- [Exercise-5](#exercise-5)  
 5. 🧪 [Flutter Widget Testing (New Feature)](#5-flutter-widget-testing-new-feature)  
-6. 📑 [Answer File Submission (Updated)](#6-answer-file-submission-updated)  
+6. 📑 [Answer File Submission (Updated)](#6-answer-file-submission)  
 7. 📝 [System Usage Feedback](#7-system-usage-feedback)
 
 <hr style="border-top: 2px solid #333;">
