@@ -156,37 +156,11 @@ Widget testing provides more detailed feedback, such as:
 
 This feature runs automatically when you press the **Run** button.
 
----
-
-# 📌 How the Widget Testing Works (User Guide)
-
-Below is the full process that happens when you press **Run** on any exercise:
-
-## 🔹 **Step 1 — Loading + Similarity Check (Initial Popup)**
-
-After pressing **Run**, the system will:
-
-1. Build your Flutter code  
-2. Run your application  
-3. Capture a screenshot of your output  
-4. Perform a **screen similarity check**
-
-Once this process finishes, you will see a **similarity popup**.
-
-The page does **not** scroll after closing the popup.  
-Instead, **once the loading process finishes and the similarity check succeeds**, the page will automatically scroll down.
-
----
-
-## 🔹 **Step 2 — Widget Test Result (Main Evaluation Section)**
-
 After the similarity check is finished, the page automatically scrolls to 'Widget Test Result'
 
 This is the **final and most important evaluation**, determining whether your code is correct.
 
----
-
-# 🟢 **1. If Everything Is Correct → “All tests passed!” (green message)**
+### 🟢 **1. If Everything Is Correct → “All tests passed!” (green message)**
 
 If all checks pass, you will see:
 
@@ -199,9 +173,7 @@ This means:
 
 No further corrections are needed.
 
----
-
-# 🔴 **2. If There Are Mistakes → Expected vs Actual Errors**
+### 🔴 **2. If There Are Mistakes → Expected vs Actual Errors**
 
 If something is incorrect, the system will show a list of differences, such as:
 
@@ -215,5 +187,42 @@ Additionally:
 - The system will **highlight the incorrect lines in red** inside the code editor  
 - This helps you immediately find the problematic part  
 - Simply fix the issue and press **Run** again
+
+<a href="#flutter-programmaing-assistant-system-with-docker" style="font-size:0.1px;color:#FF0000;">back to top ↑</a>
+
+---
+
+## 6. Answer File Submission
+
+To submit your results, please follow the simple steps below:
+
+1. **Enter your Student ID** in the Submission page  
+   → Click **Check Student ID**  
+   → Make sure your ID appears correctly.
+
+   gambar
+
+3. After the Student ID is confirmed, click  
+   **Download Test Result CSV**  
+   → The system will generate a CSV file containing all your exercise test results.
+
+4. The CSV file will follow this naming format:
+   - **studentID_widget_test_date.csv**  
+     (e.g., `50M23423_widget_test_2025-11-30.csv`)
+
+5. **Upload the downloaded CSV file to Moodle.**  
+   This CSV file is your official submission.
+
+<a href="#flutter-programmaing-assistant-system-with-docker" style="font-size:0.1px;color:#FF0000;">back to top ↑</a>
+
+---
+
+## 7. System Usage Feedback
+
+After submitting your file, please complete the short feedback form below:
+
+📝 https://forms.gle/72U3PbaarsXgoU367
+
+Your feedback helps improve the system. Thank you!
 
 <a href="#flutter-programmaing-assistant-system-with-docker" style="font-size: 0.1px; color: #FF0000;">back to top ↑</a>
