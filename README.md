@@ -52,7 +52,7 @@ Flutter Programming Learning Assistant System includes frontend, backend and web
 
 	### [Windows Setup Guide](docs/windows.md)
 ---
-	### [Linux (Ubuntu) Setup Guide](docs/linux.md)
+### [Linux (Ubuntu) Setup Guide](docs/linux.md)
 ---
 
 <a href="#flutter-programmaing-assistant-system-with-docker" style="font-size: 0.1px; color: #FF0000;">if back to top ↑ </a>
