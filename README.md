@@ -166,7 +166,7 @@ This is the **final and most important evaluation**, determining whether your co
 
 If all checks pass, you will see:
 
-gambar
+<img width="1435" height="729" alt="Screenshot 2025-12-02 at 8 27 38" src="https://github.com/user-attachments/assets/4690642a-3447-4c60-9407-2d34d4a62d8d" />
 
 This means:
 - Your code is fully correct  
@@ -179,11 +179,7 @@ No further corrections are needed.
 
 If something is incorrect, the system will show a list of differences, such as:
 
-gambar
-
-Or another example:
-
-gambar
+<img width="1430" height="725" alt="Screenshot 2025-12-02 at 8 24 39" src="https://github.com/user-attachments/assets/8a6e3e0c-4645-44e5-be15-f1da2caeedaa" />
 
 Additionally:
 - The system will **highlight the incorrect lines in red** inside the code editor  
@@ -202,17 +198,19 @@ To submit your results, please follow the simple steps below:
    → Click **Check Student ID**  
    → Make sure your ID appears correctly.
 
-   gambar
+   <img width="893" height="548" alt="Screenshot 2025-12-02 at 8 29 00" src="https://github.com/user-attachments/assets/7dc26ade-2f8e-4596-9811-2e5c9d125c48" />
 
 3. After the Student ID is confirmed, click  
    **Download Test Result CSV**  
    → The system will generate a CSV file containing all your exercise test results.
 
-4. The CSV file will follow this naming format:
+   <img width="1121" height="654" alt="Screenshot 2025-12-02 at 8 30 37" src="https://github.com/user-attachments/assets/999a8673-00f0-41ae-a078-c4f5800fa38a" />
+
+5. The CSV file will follow this naming format:
    - **studentID_widget_test_date.csv**  
      (e.g., `50M23423_widget_test_2025-11-30.csv`)
 
-5. **Upload the downloaded CSV file to Moodle.**  
+6. **Upload the downloaded CSV file to Moodle.**  
    This CSV file is your official submission.
 
 <a href="#flutter-programmaing-assistant-system-with-docker" style="font-size:0.1px;color:#FF0000;">back to top ↑</a>
