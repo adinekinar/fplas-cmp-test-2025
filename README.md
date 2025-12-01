@@ -50,7 +50,7 @@ Flutter Programming Learning Assistant System includes frontend, backend and web
 ## 3. Procedure according to OS
 - Depending on the **Operating System (OS)**, the way is different. Therefore, please follow the procedure according to the correspondence **OS**.
 
-	### [Windows Setup Guide](docs/windows.md)
+### [Windows Setup Guide](docs/windows.md)
 ---
 ### [Linux (Ubuntu) Setup Guide](docs/linux.md)
 ---
