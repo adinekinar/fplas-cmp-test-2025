@@ -2,7 +2,7 @@
 
 This document explains how to run **FPLAS** on **Windows** using Docker Desktop.
 
-## 1. Download Required Docker Images
+### 1. Get 3 docker images on the command prompt(cmd).
 
 ```
 docker pull adinekinar16/fplas-backend:latest
@@ -10,16 +10,10 @@ docker pull adinekinar16/fplas-frontend:latest
 docker pull 24091997/fplas-nginx-2024:v1
 ```
 
-## 2. Move to Desktop Directory
+## 2. Change the desktop directory on the command prompt(cmd)
 
 ```
-cd %USERPROFILE%\Desktop
-```
-
-If your project folder already exists:
-
-```
-cd %USERPROFILE%\Desktop\fplas-2025
+cd Desktop
 ```
 
 ## 3. Download the Project
@@ -33,55 +27,44 @@ cd %USERPROFILE%\Desktop\fplas-2025
 5. Rename to:
 
 ```
-fplas-2025
+fplas-cmp-test-2025
 ```
 
 ### Option B — With Git
 
 ```
-cd %USERPROFILE%\Desktop
-git clone https://github.com/your-user/fplas-2025.git
-cd fplas-2025
+git clone https://github.com/adinekinar/fplas-cmp-test-2025.git
+cd fplas-cmp-test-2025
 ```
 
 ## 4. Configure Output Folder in docker-compose.yml
 
-Edit:
-
-```yaml
-nplas-app:
-  image: adinekinar16/fplas-frontend:latest
-  volumes:
-    - C:/Users/<YourName>/Desktop/fplas_results:/app/addon/output
-```
-
-Create folder:
+Open the docker-compose.yml file in the "fplas-cmp-test-2025" project and Modify the following directory to match your PC's Desktop directory. Then, the results directory appears on PC's Desktop.
 
 ```
-mkdir %USERPROFILE%\Desktop\fplas_results
+diisi sini
+
+to
+
+C:\\Users\\User\\Desktop\\results:/app/addon/output (or) /C:/Users/User/Desktop/results:/app/addon/output 
 ```
+> Caution
+> / or \ \ is depends on your PC setup. Thus, try one of them until you see the results directory on PC's Desktop.
 
 ## 5. Run FPLAS
 
 ```
-cd %USERPROFILE%\Desktop\fplas-2025
+fplas-cmp-test-2025
+```
+```
 docker compose up
 ```
 
-## 6. Access
+## 6. Open Chrome browser and navigate to http://localhost:4000/
 
-```
-http://localhost:4000/
-```
-
-## 7. Output Location
-
-```
-C:\Users\<YourName>\Desktop\fplas_results
-```
-
-## 8. Stop
+## 7. Stop
 
 ```
 docker compose down
 ```
+
