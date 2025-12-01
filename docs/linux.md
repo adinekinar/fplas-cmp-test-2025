@@ -2,14 +2,7 @@
 
 This document explains how to run **FPLAS** on **Linux** using Docker.
 
-## 1. Requirements
-
-```
-docker --version
-docker compose version
-```
-
-## 2. Pull Docker Images
+### 1. Get 3 docker images on the command prompt(cmd).
 
 ```
 docker pull adinekinar16/fplas-backend:latest
@@ -17,63 +10,59 @@ docker pull adinekinar16/fplas-frontend:latest
 docker pull 24091997/fplas-nginx-2024:v1
 ```
 
-## 3. Download the Project
-
-### With Git
+### 2. Change the desktop directory on the command prompt(cmd)
 
 ```
-cd ~/Desktop
-git clone https://github.com/your-user/fplas-2025.git
-cd fplas-2025
+cd Desktop
 ```
 
-### Without Git
+### 3. Download the Project
 
-1. Download ZIP
-2. Extract
-3. Move to Desktop
-4. Rename to fplas-2025
+#### Option A — Without Git
 
-```
-cd ~/Desktop/fplas-2025
-```
-
-## 4. Create Output Directory
+1. Open the GitHub repository.
+2. Click **Code → Download ZIP**.
+3. Extract it.
+4. Move to Desktop.
+5. Rename to:
 
 ```
-mkdir -p ~/Desktop/fplas_results
+fplas-cmp-test-2025
 ```
 
-## 5. Configure docker-compose.yml
-
-```yaml
-nplas-app:
-  image: adinekinar16/fplas-frontend:latest
-  volumes:
-    - /home/<user>/Desktop/fplas_results:/app/addon/output
-```
-
-## 6. Run
+#### Option B — With Git
 
 ```
-cd ~/Desktop/fplas-2025
+git clone https://github.com/adinekinar/fplas-cmp-test-2025.git
+cd fplas-cmp-test-2025
+```
+
+### 4. Configure Output Folder in docker-compose.yml
+
+Open the docker-compose.yml file in the "fplas-cmp-test-2025" project and Modify the following directory to match your PC's Desktop directory. Then, the results directory appears on PC's Desktop.
+
+```
+diisi sini
+
+to
+
+/home/.../Desktop/results:/app/addon/output
+```
+### 5. Run FPLAS
+
+```
+fplas-cmp-test-2025
+```
+```
 docker compose up
 ```
 
-## 7. Access
+## 6. Open Chrome browser and navigate to http://localhost:4000/
 
-```
-http://localhost:4000/
-```
-
-## 8. Output
-
-```
-/home/<user>/Desktop/fplas_results
-```
-
-## 9. Stop
+## 7. Stop
 
 ```
 docker compose down
 ```
+
+
