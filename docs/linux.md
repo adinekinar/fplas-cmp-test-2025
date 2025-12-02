@@ -42,7 +42,7 @@ cd fplas-cmp-test-2025
 Open the docker-compose.yml file in the "fplas-cmp-test-2025" project and Modify the following directory to match your PC's Desktop directory. Then, the results directory appears on PC's Desktop.
 
 ```
-diisi sini
+C:/Users/safiraak/Desktop/fplas_results:/app/addon/output
 
 to
 
@@ -64,5 +64,6 @@ docker compose up
 ```
 docker compose down
 ```
+
 
 
