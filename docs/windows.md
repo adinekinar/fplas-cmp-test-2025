@@ -90,6 +90,7 @@ If only warnings appear, it’s usually fine.
 
 ### 7. Stop
 When you want to shut down the system:
+
 a.	Go back to the PowerShell window where Docker is running
 	
 b.	Press: `Ctrl+C`
@@ -97,6 +98,7 @@ b.	Press: `Ctrl+C`
 c.	Wait until containers stop and logs finish
 	
 d.	Close PowerShell
+
 
 
 
