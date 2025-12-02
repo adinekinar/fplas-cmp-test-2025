@@ -1,0 +1,37 @@
+services:
+  nplas-app:
+    image: adinekinar16/fplas-frontend:latest
+    volumes:
+      - C:/Users/safiraak/Desktop/fplas_results:/app/addon/output
+    networks:
+      - app-network
+    ports:
+      - "4000:4000"
+
+  flutter-app:
+    image: adinekinar16/fplas-backend:latest
+    hostname: flutter-backend
+    volumes:
+      - shared-data:/app/build/web
+    networks:
+      - app-network
+    ports:
+      - "5050:5050"
+    stdin_open: true
+    tty: true
+
+  nginx-app:
+    image: 24091997/fplas-nginx-2024:v1
+    volumes:
+      - shared-data:/usr/share/nginx/html
+    networks:
+      - app-network
+    ports:
+      - "8080:80"
+
+volumes:
+  shared-data:
+
+networks:
+  app-network:
+    driver: bridge
