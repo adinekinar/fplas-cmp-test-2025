@@ -43,6 +43,9 @@ Flutter Programming Learning Assistant System includes frontend, backend and web
 - <strong>If necessary,</strong> please download & reference the following user manual  
 [fplas_docker.pdf](https://github.com/user-attachments/files/18124457/fplas_docker.pdf) for Docker Desktop.
 
+> **Note for Windows users:**  
+> Choose **Docker Desktop for Windows – AMD64**, because AMD64 (x86_64) works for both **Intel** and **AMD Ryzen** CPUs.  
+> Only choose **Windows – ARM64** if you have an ARM-based device (e.g., Surface Pro X or a Qualcomm Snapdragon laptop).
 	
 <a href="#flutter-programmaing-assistant-system-with-docker" style="font-size: 0.1px; color: #FF0000;">if back to top ↑ </a>
 <hr style="border-top: 2px solid #333;">
