@@ -77,26 +77,27 @@ docker compose up
 
 #### 🔍 How to Know If Docker Compose Is Running Correctly
 You will know Docker is running properly if:
-##### 1. PowerShell starts printing running logs
+##### A. PowerShell starts printing running logs
 Example output :
 
 gambar
 
 As long as you see continuous logs → Docker is running.
 
-##### 2. No “ERROR” messages appear
+##### B. No “ERROR” messages appear
 
 If only warnings appear, it’s usually fine.
 
 ### 7. Stop
 When you want to shut down the system:
-	1.	Go back to the PowerShell window where Docker is running
+a.	Go back to the PowerShell window where Docker is running
 	
-	2.	Press: ``Ctrl+C``
+b.	Press: `Ctrl+C`
 	
-	3.	Wait until containers stop and logs finish
+c.	Wait until containers stop and logs finish
 	
-	4.	Close PowerShell
+d.	Close PowerShell
+
 
 
 
