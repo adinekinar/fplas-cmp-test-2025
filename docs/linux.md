@@ -59,6 +59,9 @@ to
 
 /home/.../Desktop/results:/app/addon/output
 ```
+
+<img width="579" height="216" alt="Screenshot docker compose linux" src="https://github.com/user-attachments/assets/34a34a39-8b30-4d17-a5b6-cab4b3fa1f2e" />
+
 ### 6. Run Docker Compose
 
 Move into the project folder:
@@ -99,6 +102,7 @@ b. Press: `Ctrl+C`
 c. Wait until containers stop and logs finish
 
 d. Close Terminal
+
 
 
 
