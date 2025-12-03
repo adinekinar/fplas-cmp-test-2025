@@ -59,8 +59,10 @@ to
 
 C:\\Users\\User\\Desktop\\results:/app/addon/output (or) /C:/Users/User/Desktop/results:/app/addon/output 
 ```
-> Caution
+> [!CAUTION]
 > / or \ \ is depends on your PC setup. Thus, try one of them until you see the results directory on PC's Desktop.
+
+<img width="841" height="240" alt="Screenshot docker compose" src="https://github.com/user-attachments/assets/40c2c4f1-1fba-49b4-8976-d077e662afe4" />
 
 ### 5. Run the Docker Command
 ```
@@ -98,6 +100,7 @@ b.	Press: `Ctrl+C`
 c.	Wait until containers stop and logs finish
 	
 d.	Close PowerShell
+
 
 
 
