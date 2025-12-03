@@ -83,7 +83,7 @@ docker compose up
 
 Example:
 
-gambar
+<img width="1105" height="548" alt="Screenshot 2025-12-03 162648" src="https://github.com/user-attachments/assets/3ad0578c-1781-44b4-8b8a-938b0c85125b" />
 
 If logs continue → the system is running.
 
@@ -102,6 +102,7 @@ b. Press: `Ctrl+C`
 c. Wait until containers stop and logs finish
 
 d. Close Terminal
+
 
 
 
