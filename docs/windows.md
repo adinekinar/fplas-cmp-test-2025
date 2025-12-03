@@ -82,7 +82,7 @@ You will know Docker is running properly if:
 ##### A. PowerShell starts printing running logs
 Example output :
 
-gambar
+<img width="1105" height="548" alt="Screenshot 2025-12-03 162648" src="https://github.com/user-attachments/assets/31424b1b-06d8-4613-b75e-db12333d5cd0" />
 
 As long as you see continuous logs → Docker is running.
 
@@ -100,6 +100,7 @@ b.	Press: `Ctrl+C`
 c.	Wait until containers stop and logs finish
 	
 d.	Close PowerShell
+
 
 
 
