@@ -2,6 +2,29 @@
 
 This document explains how to run **FPLAS** on **Windows** using Docker Desktop.
 
+### 0. Stop Existing FPLAS Containers (Important Before Installation)
+
+Before installing the new FPLAS 2025 system, please stop any old FPLAS containers that may still be running on your PC.
+
+This is important because:
+- The previous version you installed last week uses the same ports (4000, 8080, 5000)
+- If old containers are still running, the new system cannot start
+
+Stop all running Docker containers:
+```
+docker stop $(docker ps -aq)
+```
+(Optional) Remove old stopped containers:
+```
+docker rm $(docker ps -aq)
+```
+
+> [!CAUTION]
+> These commands only stop/remove containers, not your images or project files.
+> Safe to use before installing the new FPLAS version.
+
+Now you can continue with the installation steps below.
+
 ### 1. Open PowerShell
 Please use **Windows PowerShell** or **Command Prompt(cmd)** for all commands.
 
@@ -100,6 +123,7 @@ b.	Press: `Ctrl+C`
 c.	Wait until containers stop and logs finish
 	
 d.	Close PowerShell
+
 
 
 
